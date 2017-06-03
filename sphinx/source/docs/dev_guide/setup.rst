@@ -127,7 +127,7 @@ Alternatively, on Ubuntu you can use ``apt-get``:
 
 .. code-block:: sh
 
-    apt-get install npm node
+    apt-get install npm nodejs
 
 Install Gulp and necessary plugins
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -267,7 +267,7 @@ or ``pip install`` for the packages references at :ref:`install_dependencies`.
 There are additional testing dependencies required to run the unit tests,
 which include:
 
-* beautiful-soup
+* beautifulsoup4
 * colorama
 * pytest
 * pytest-cov
@@ -276,6 +276,16 @@ which include:
 * websocket-client
 * flake8
 * boto
+* pillow
+* bkcharts
+* icalendar
+* packaging
+* pandas
+* matplotlib
+* flexx
+* jupyter
+* nbformat
+* futures
 
 Both the build and test dependencies can potentially change between releases
 and be out of sync with the hosted Bokeh site documentation, so the best way
@@ -290,7 +300,7 @@ dependencies include:
 
 * jinja2
 * numpy
-* dateutil
+* python-dateutil
 * pyyaml
 * requests
 * tornado
@@ -309,7 +319,7 @@ If any needed packages are missing, you will be given output like this
 
     ------------------------------------------------------------------
     You are missing the following Dev dependencies:
-     *  beautiful-soup
+     *  beautifulsoup4
 
     ------------------------------------------------------------------
     You are missing the following Docs dependencies:
@@ -326,6 +336,8 @@ Otherwise, you should see this message
     ------------------------------------------------------------------
     All Docs dependencies installed!  You are good to go!
 
+    --------------------------------------------------------------------------------
+    All Base dependencies installed!  You are good to go!
 
 Additionally, ``devdeps.py`` will check that the ``bokehjs/node_modules``
 directory exists, which is where npm packages are installed.
